@@ -143,7 +143,7 @@ const graves = new THREE.Group()
 scene.add(graves)
 
 const graveGeometry = new THREE.BoxGeometry(0.6, 0.8, 0.2)
-const graveMaterial = new THREE.MeshStandardMaterial({color: 0xb2b6b1})
+const graveMaterial = new THREE.MeshStandardMaterial({color: 0x444444})
 
 for(let i = 0; i < 50; i++){
     const angle = Math.random() * Math.PI * 2
@@ -190,7 +190,7 @@ moonLight.position.set(4, 5, - 2)
 scene.add(moonLight)
 
 // Doorlight
-const doorLight = new THREE.PointLight(0xff7d46, 1, 7)
+const doorLight = new THREE.PointLight(0xFC1727, 1, 7, 3)
 doorLight.position.set(0, 2.2, 2.7)
 house.add(doorLight)
 
